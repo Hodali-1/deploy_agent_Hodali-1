@@ -4,7 +4,7 @@
 
 # -------------------------------------------------------
 # STEP 1: SIGNAL TRAP (Ctrl+C Handler)
-# We set this up FIRST so it is active during the whole script.
+# I set this up FIRST so it is active during the whole script.
 # If the user presses Ctrl+C at any point, this function runs.
 # -------------------------------------------------------
 
@@ -50,7 +50,7 @@ echo "Please enter a project name:"
 # and stores it in a variable called INPUT
 read INPUT
 
-# We build the folder name using the input the user gave
+# I build the folder name using the input the user gave
 # For example, if they type "demo", PROJECT_DIR becomes "attendance_tracker_demo"
 PROJECT_DIR="attendance_tracker_${INPUT}"
 
@@ -72,7 +72,7 @@ echo "Folders created successfully."
 # STEP 4: COPY THE SOURCE FILES INTO THE RIGHT FOLDERS
 # -------------------------------------------------------
 
-# cp means "copy". We copy each file to where it belongs.
+# cp means "copy". I copy each file to where it belongs.
 cp attendance_checker.py "$PROJECT_DIR/attendance_checker.py"
 cp assets.csv "$PROJECT_DIR/Helpers/assets.csv"
 cp config.json "$PROJECT_DIR/Helpers/config.json"
